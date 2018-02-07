@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000"
+            android:padding="10dp"
+            android:text="Ingresar gasto"
+            android:textColor="#ffff" />
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/MyHintText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Fecha"
+            android:textColorHint="#FFFF">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/dialog_fecha"
+                style="@style/MyEditText"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFF"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mes: "
+                android:textColor="#FFF"/>
+
+            <Spinner
+                android:padding="5dp"
+                style="@style/CustomSpinn"
+                android:id="@+id/spin_mes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:backgroundTint="#FFFF">
+
+            </Spinner>
+
+        </LinearLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/MyHintText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Importe"
+            android:textColorHint="#FFFF">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/dialog_importe"
+                style="@style/MyEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFF"
+                android:inputType="numberDecimal"
+                android:imeOptions="actionNext"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/MyHintText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Subtotal"
+            android:textColorHint="#FFFF">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/dialog_subtotal"
+                style="@style/MyEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFF"
+                android:inputType="numberDecimal"
+                android:imeOptions="actionNext"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/MyHintText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="I.V.A."
+            android:imeOptions="actionNext"
+            android:textColorHint="#FFFF">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/dialog_iva"
+                style="@style/MyEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFF"
+                android:inputType="numberDecimal"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Ingreso/Egreso: "
+                android:textColor="#FFF"/>
+            <Spinner
+                android:padding="5dp"
+                style="@style/CustomSpinn"
+                android:id="@+id/spin_IE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFF">
+            </Spinner>
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/MyHintText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Tipo"
+            android:textColorHint="#FFFF">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/dialog_tipo"
+                style="@style/MyEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                android:textColor="#FFF" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/MyHintText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Empleado"
+            android:textColorHint="#FFFF">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/dialog_empleado"
+                style="@style/MyEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                android:textColor="#FFF" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            style="@style/MyHintText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Descripción"
+            android:textColorHint="#FFFF">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/dialog_descrip"
+                style="@style/MyEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#FFF"
+                android:imeOptions="actionNext"/>
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            style="@style/MyHintText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Referencia"
+            android:textColorHint="#FFFF">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/dialog_referencia"
+                android:textAllCaps="true"
+                style="@style/MyEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:imeOptions="actionDone"
+                android:textColor="#FFF" />
+        </android.support.design.widget.TextInputLayout>
+        <LinearLayout
+            android:gravity="right"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/dialog_aceptar"
+                android:text="Aceptar"
+                android:textColor="#fff"
+                android:background="@android:color/transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/dialog_cancelar"
+                android:textColor="#fff"
+                android:text="Cancelar"
+                android:background="@android:color/transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

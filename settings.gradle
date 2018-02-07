@@ -1,0 +1,1 @@
+include ':app', ':pdf2data-1.2.0', ':itextpdf-5.5.12'

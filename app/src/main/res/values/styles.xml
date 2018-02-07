@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
+
+        <!-- color del cursor, linea y etiqueta de los EditText-->
+    </style>
+    
+    <style name="MyHintText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/secoLightColor</item>
+    </style>
+    
+    <style name="MyEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+    </style>
+
+
+    <style name="CustomSpinn" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:spinnerItemStyle">@style/SpinnerItem</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItem</item>
+    </style>
+
+    <style name="SpinnerItem">
+        <item name="android:textColor">#993399</item>
+        <!--<item name="android:backgroundC">@drawable/my_rectangle</item>-->
+    </style>
+    <style name="SpinnerDropDownItem">
+        <item name="android:textColor">#993399</item>
+        <!--<item name="android:background">@drawable/my_rectangle</item>-->
+    </style>
+</resources>

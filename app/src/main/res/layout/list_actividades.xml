@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/gray_light">
+    
+    <LinearLayout
+        android:elevation="5dp"
+        android:padding="4dp"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        
+        <TextView
+            android:textColor="@color/gray"
+            android:id="@+id/list_actividad"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Dummy Actividad" />
+        <TextView
+            android:textColor="#FFF"
+            android:text=" Cantidad: "
+            android:layout_marginLeft="2dp"
+            android:layout_weight="0.6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="#fff"
+            android:id="@+id/list_cantidad"
+            android:layout_weight="0.4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        
+        <TextView
+            android:text="Precio: $ "
+            android:textColor="#FFF"
+            android:layout_weight="0.6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        
+        <TextView
+            android:textColor="#ffff"
+            android:id="@+id/list_precio"
+            android:layout_weight="0.4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="1000"/>
+
+    </LinearLayout>
+    
+</LinearLayout>
